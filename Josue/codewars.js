@@ -1,6 +1,7 @@
 let number = 348597
 let number2 = 5647
 let number3 = 746512
+let number4 = 7654345652
 
 const arrayNumberInvert = (element) => {
     const createArrayReverse = Array.from(element.toString()).reverse()
