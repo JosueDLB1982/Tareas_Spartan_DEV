@@ -13,4 +13,4 @@ const arrayNumberInvert = (element) => {
     //console.log(returnArrayNumbers)
     console.log(`La cifra convertida en array invertido es [${result}]`)
 }
-arrayNumberInvert(number2)
+arrayNumberInvert(number3)
