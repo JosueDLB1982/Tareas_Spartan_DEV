@@ -21,12 +21,10 @@ button.addEventListener('click', () => {
             }
             charactersList.map((res) => {
                 const list = document.getElementById('list')
-                const fragment = document.createDocumentFragment()
                 const listItem = document.createElement('li')
                 listItem.textContent = res
-                fragment.appendChild(listItem)
-                list.appendChild(fragment)
+                list.appendChild(listItem)
             })
             console.log(...charactersList)
-        }).catch(error => console.log(`${error}No hubo respuesta satisfactoria del servidor. Compruebe la url de consulta.`))
+        }).catch(error => console.log(`${error} No hubo respuesta satisfactoria del servidor. Compruebe la url de consulta.`))
 })
