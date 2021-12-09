@@ -20,7 +20,6 @@ button.addEventListener('click', () => {
                 charactersList.splice(10)
             }
             charactersList.map((res) => {
-                const list = document.getElementById('list')
                 const listItem = document.createElement('li')
                 listItem.textContent = res
                 list.appendChild(listItem)
