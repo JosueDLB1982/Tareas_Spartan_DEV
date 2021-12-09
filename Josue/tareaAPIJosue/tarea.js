@@ -28,5 +28,5 @@ button.addEventListener('click', () => {
                 list.appendChild(fragment)
             })
             console.log(...charactersList)
-        }).catch(error => console.log(`${error} No hubo respuesta satisfactoria del servidor`))
+        }).catch(error => console.log(`${error} No hubo respuesta satisfactoria del servidor. Compruebe la url de consulta.`))
 })
