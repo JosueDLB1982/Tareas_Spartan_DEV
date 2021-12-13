@@ -19,11 +19,20 @@ button.addEventListener('click', () => {
                 varyResult(charactersList)
                 charactersList.splice(10)
             }
-            charactersList.map((res) => {
-                const listItem = document.createElement('li')
-                listItem.textContent = res
-                list.appendChild(listItem)
-            })
+            if (charactersList.length !== 0) { // condicional agregado para borrar los resultados de la petición anterior
+                document.getElementById('list').innerHTML = '' 
+                charactersList.map((res) => {
+                    const listItem = document.createElement('li')
+                    listItem.textContent = res
+                    list.appendChild(listItem)
+                })
+            } else {
+                charactersList.map((res) => {
+                    const listItem = document.createElement('li')
+                    listItem.textContent = res
+                    list.appendChild(listItem)
+                })
+            }
             console.log(...charactersList)
         }).catch(error => console.log(`${error} No hubo respuesta satisfactoria del servidor. Compruebe la url de consulta.`))
 })
